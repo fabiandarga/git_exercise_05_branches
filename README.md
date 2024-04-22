@@ -1,9 +1,9 @@
-# Übungsaufgabe: Branches erstellen und mergen
+# Exercise: Creating Branches and Merging
 
-Dieses Beispiel zeigt dir, wie du Branches erstellen kannst, um an verschiedenen Funktionen zu arbeiten, und wie du Änderungen aus diesen Branches in den Hauptbranch mergen kannst. Wiederhole diese Übung, um das Erstellen von Branches und das Mergen besser zu verstehen und zu üben.
+This example will show you how to create branches to work on different features and how to merge changes from these branches into the main branch. Repeat this exercise to better understand and practice creating branches and merging.
 
-## Schritt 1
-Initialisiere ein neues Git-Repository und erstelle einen Hauptbranch:
+## Step 1
+Initialize a new Git repository and create a main branch:
 
 ```bash
 mkdir exercise_05_branches
@@ -14,15 +14,15 @@ git add main.txt
 git commit -m "Initial commit"
 ```
 
-## Schritt 2
-Erstelle einen neuen Branch mit Namen *feature1*:
+## Step 2
+Create a new branch named *feature1*:
 
 ```bash
 git branch feature1
 ```
 
-## Schritt 3
-Wechsle zum Branch `feature1` und erstelle eine neue Datei:
+## Step 3
+Switch to the `feature1` branch and create a new file:
 
 ```bash
 git checkout feature1
@@ -31,16 +31,16 @@ git add feature1.txt
 git commit -m "Added feature 1"
 ```
 
-## Schritt 4
-Wechsel zurück zu `main` und erstelle von dort einen weiteren Branch:
+## Step 4
+Switch back to `main` and create another branch from there:
 
 ```bash
 git checkout main
 git branch feature2
 ```
 
-## Schritt 5
-Wechsle zum Branch `feature2` und erstelle eine neue Datei:
+## Step 5
+Switch to the `feature2` branch and create a new file:
 
 ```bash
 git checkout feature2
@@ -49,8 +49,8 @@ git add feature2.txt
 git commit -m "Added feature 2"
 ```
 
-## Schritt 6
-Wechsle zurück zum Hauptbranch und füge Änderungen hinzu:
+## Step 6
+Switch back to the main branch and add changes:
 
 ```bash
 git checkout main
@@ -59,25 +59,24 @@ git add main.txt
 git commit -m "Updated main branch"
 ```
 
-## Schritt 7
-Merge die Änderungen aus `feature1` in den Hauptbranch:
+## Step 7
+Merge the changes from `feature1` into the main branch:
 
 ```bash
 git merge feature1
 ```
 
-## Schritt 8
-Merge die Änderungen aus `feature2` in den Hauptbranch:
+## Step 8
+Merge the changes from `feature2` into the main branch:
 
 ```bash
 git merge feature2
 ```
 
-## Schritt 9
-Überprüfe die Commit-Historie und den Zustand der Dateien:
+## Step 9
+Check the commit history and the status of the files:
 
 ```bash
 git log --oneline --graph --all
 ls
 ```
-
