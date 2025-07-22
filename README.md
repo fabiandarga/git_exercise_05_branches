@@ -33,7 +33,9 @@ git commit -m "Added feature 1"
 
 ## Schritt 4
 Wechsel zurück zu `main` und erstelle von dort einen weiteren Branch:
-
+  
+**!Achtung ggf. heißt der Branch "master"**
+  
 ```bash
 git checkout main
 git branch feature2
